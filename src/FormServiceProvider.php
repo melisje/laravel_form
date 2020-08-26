@@ -17,7 +17,7 @@ class FormServiceProvider extends ServiceProvider
       $this->loadMigrationsFrom(__DIR__.'/migrations');
       $this->loadViewsFrom(__DIR__.'/views', 'utils');
       $this->publishes([
-          __DIR__.'/views' => base_path('resources/views/melit/utils'),
+          __DIR__.'/views' => base_path('resources/views/melit/form'),
       ]);
     }
 
@@ -28,6 +28,6 @@ class FormServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->make('melit\utils\SettingsController');
+       //
     }
 }
