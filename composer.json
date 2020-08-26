@@ -1,0 +1,32 @@
+{
+    "name": "melit/form",
+    "description": "Form - library of common used classes and functionality",
+    "type": "library",
+    "license": "Mel-IT BVBA",
+    "authors": [
+        {
+            "name": "Jef Melis",
+            "email": "jef.melis@melit.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Melit\\Form\\": "src/"
+        }
+    },
+    "require": {
+
+    },
+    "extra": {
+      "laravel": {
+        "providers":
+        [
+          "Melit\\Form\\FormServiceProvider"
+        ],
+        "aliases": {
+            "Form": "Melit\\Form\\FormFacade"
+        }
+      }
+    }
+}
